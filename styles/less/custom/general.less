@@ -1,0 +1,82 @@
+/*******************************************************************************
+* Generic styling
+*******************************************************************************/
+
+body {
+    font-family: @font-family-base;
+    background-color: @bg-color;
+}
+
+.logo {
+    text-align: center;
+    .img {
+        position: absolute;
+        left: 50%;
+    }
+}
+
+.tab-panels ul {
+    margin: @tab-margin;
+    padding: @tab-padding;
+}
+
+.tab-panels ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: @tab-bg;
+    margin: @tab-margin;
+    padding: @li-padding;
+    border-radius: @border-radius-base;
+    color: @tab-li;
+    font-weight: @li-font-weight;
+    cursor: pointer;
+    font-size: @font-size-small;
+}
+
+.tab-panels ul li:hover {
+    color: @tab-li;
+    background: @tab-hover;
+}
+
+.tab-panels ul li.active {
+    color: @tab-li;
+    background: @tab-hover;
+}
+
+.tab-panels .panel {
+    display: none;
+    background-color: @tab-li;
+    padding: @panel-padding;
+    border-radius: @border-radius-base;
+}
+
+.tab-panels .panel.active {
+    display: block;
+}
+
+.userAvatar {
+    border: 1px solid @avatar-border-color;
+    border-radius: @border-radius-large;
+}
+
+.user {
+    font-size: @font-size-base;
+    font-style: @font-style;
+    display: block;
+}
+
+.userRating {
+    width: @rating-width;
+    height: @rating-height;
+}
+
+.reviewHeader {
+    font-size: @font-size-large;
+    font-weight: @font-weight-large;
+    margin-bottom: @margin-bottom-default;
+    color: @header-color;
+}
+
+.reviewBody {
+    font-size: @font-size-medium;
+}
